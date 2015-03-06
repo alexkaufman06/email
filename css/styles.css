@@ -1,0 +1,57 @@
+body {
+  font-family: 'Lobster', cursive;
+}
+
+h1 {
+  color: #000;
+  text-align: center;
+}
+
+h2, h3, h4 {
+  color: #000;
+}
+
+hr {
+  display: block; height: 1px;
+  border: 0; border-top: 1px solid #000;
+  margin: 1em 0; padding: 0;
+}
+
+li {
+  font-size: 150%;
+  color: #000;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  color: #D4AF37;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+.top {
+  text-align: center;
+  color: #D4AF37;
+  font-size: 500%;
+}
+
+.rotate {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin:-60px 0 0 -80px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+  }
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+}
