@@ -1,0 +1,42 @@
+<h1>{{name}}: {{email}}</h1>
+<hr>
+
+{{#if isEditing}}
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label>
+      {{input value=name id="name" class="form-control"}}
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      {{input value=email id="email" class="form-control"}}
+    </div>
+
+    <button class="btn btn-primary" {{action 'save'}}>Save</button>
+  </form>
+{{else}}
+  <p>{{body}}</p>
+
+  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+{{/if}}
+
+{{outlet}}
+
+<h2>Emails:</h2>
+
+{{#each email in emails itemController="email"}}
+  <hr>
+  <p>
+    {{email.subject}} {{email.to}}
+    <br>
+    <button class="btn btn-xs btn-primary" {{action 'details'}}>Details</button>
+    <button class="btn btn-xs btn-danger" {{action 'delete'}}>Delete</button>
+  </p>
+  {{#if email.isShowing}}
+    {{email.email}}
+  {{/if}}
+  <hr>
+{{/each}}
+
+<p>{{#link-to 'new-email' this class="btn btn-primary"}}New email{{/link-to}}</p>

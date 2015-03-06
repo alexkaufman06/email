@@ -1,0 +1,10 @@
+<h1>Users</h1>
+<hr>
+
+<ul>
+  {{#each user in model}}
+    <li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'new-user' classNames="btn btn-primary"}}New User{{/link-to}}
