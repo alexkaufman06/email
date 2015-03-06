@@ -4,4 +4,6 @@ Email.Router.map(function() {
     this.resource('new-email');
   });
   this.resource('new-user');
+  this.resource('about');
+  this.resource('contact');
 });

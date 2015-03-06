@@ -28,7 +28,9 @@
 {{#each email in emails itemController="email"}}
   <hr>
   <p>
-    {{email.subject}} {{email.to}}
+    Subject: {{email.subject}}
+    <br>
+    To: {{email.to}}
     <br>
     <button class="btn btn-xs btn-primary" {{action 'details'}}>Details</button>
     <button class="btn btn-xs btn-danger" {{action 'delete'}}>Delete</button>
