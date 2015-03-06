@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email</title>
+
+  <link rel="stylesheet" href="css/paper.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+  <script src="libs/jquery-1.11.1.js"></script>
+  <script src="libs/ember-template-compiler-1.10.0.js"></script>
+  <script src="libs/ember-1.10.0.debug.js"></script>
+  <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+  <script src="libs/ember-data-1.0.0-beta.15.js"></script>
+  <script src="libs/localstorage-adapter-0.5.1.js"></script>
+
+  <script src="email.js"></script>
+  <script src="store.js"></script>
+  <script src="router.js"></script>
+
+  <script src="controllers/user.js"></script>
+  <script src="controllers/new-user.js"></script>
+  <script src="controllers/new-email.js"></script>
+  <script src="controllers/email.js"></script>
+
+  <script src="routes/users.js"></script>
+  <script src="routes/user.js"></script>
+  <script src="routes/new-email.js"></script>
+
+  <script src="models/user.js"></script>
+  <script src="models/email.js"></script>
+
+  <script>
+    EmberHandlebarsLoader.loadTemplates([
+      'application', 'new-email', 'new-user', 'user', 'users'
+    ]);
+  </script>
+</head>
+<body>
+
+</body>
+</html>
