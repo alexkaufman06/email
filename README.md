@@ -1,7 +1,7 @@
 # Email
 This is an app that I built using ember as part of the Epicodus curriculm.
 
-Clone repositry and start server
+### Clone repositry and start server:
 ```
 $ git clone https://github.com/alexkaufman06/email
 $ python -m SimpleHTTPServer
